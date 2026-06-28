@@ -26,8 +26,9 @@ transform = transforms.Compose([
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = AIFaceDetector(freeze_early=True).to(device)
-model.load_state_dict(torch.load(
-    'models/best_model.pth', map_location=device))
+import os
+model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models', 'best_model.pth')
+model.load_state_dict(torch.load(model_path, map_location=device))
 model.eval()
 
 

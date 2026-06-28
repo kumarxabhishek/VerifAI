@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 sys.path.append(str(Path(__file__).parent))
+sys.path.append('/app/src')
 from agents import build_graph, AgentState
 
 app = FastAPI(
