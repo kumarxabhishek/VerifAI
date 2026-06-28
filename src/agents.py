@@ -317,8 +317,8 @@ if __name__ == "__main__":
     pipeline = build_graph()
 
     import os
-    test_image = os.listdir('data/real-vs-fake/test/real')[0]
-    test_image = f'data/real-vs-fake/test/real/{test_image}'
+    test_image = os.listdir('data/real-vs-fake/test/fake')[0]
+    test_image = f'data/real-vs-fake/test/fake/{test_image}'
     print(f"Testing with: {test_image}")
 
     initial_state = AgentState(
