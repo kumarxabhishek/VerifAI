@@ -1,0 +1,5 @@
+data/
+temp_uploads/
+__pycache__/
+*.pyc
+.env

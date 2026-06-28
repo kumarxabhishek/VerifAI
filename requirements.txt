@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+torch
+torchvision
+opencv-python-headless
+pillow
+numpy
+scikit-learn
+langgraph
+langchain
